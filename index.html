@@ -3,34 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Imię Nazwisko | Portfolio</title>
+  <title>Michał Częstochowski | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Imię Nazwisko</h1>
-    <p>Analityk | AI | Projekty | Portfolio</p>
+  <div class="background"></div>
+
+  <header class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Portfolio / Personal Website</p>
+      <h1>Michał Częstochowski</h1>
+      <p class="subtitle">Credit Risk Analyst | AI & Data Projects | Quantitative Finance</p>
+      <p class="intro">
+        Buduję projekty z obszaru analizy danych, ryzyka kredytowego,
+        sztucznej inteligencji i metod ilościowych. Łączę podejście analityczne,
+        biznesowe i techniczne.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn btn-primary" href="#projects">Zobacz projekty</a>
+        <a class="btn btn-secondary" href="#contact">Kontakt</a>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section>
+    <section class="card" id="about">
       <h2>O mnie</h2>
-      <p>Krótki profesjonalny opis kim jesteś i co robisz.</p>
+      <p>
+        Jestem analitykiem ryzyka kredytowego i studentem kierunku ilościowego.
+        Interesuję się AI, data science, modelowaniem, automatyką decyzji
+        oraz zastosowaniem metod ilościowych w finansach i biznesie.
+      </p>
     </section>
 
-    <section>
+    <section class="card" id="experience">
+      <h2>Doświadczenie</h2>
+      <p>
+        Na co dzień pracuję w obszarze ryzyka kredytowego, analizy kontrahentów
+        oraz automatyzacji procesów analitycznych. Tworzę i rozwijam projekty
+        łączące dane, modele i praktyczne zastosowania biznesowe.
+      </p>
+    </section>
+
+    <section class="card" id="projects">
       <h2>Projekty</h2>
-      <ul>
-        <li><a href="https://github.com/twojlogin/projekt-1">Projekt 1</a></li>
-        <li><a href="https://github.com/twojlogin/projekt-2">Projekt 2</a></li>
-      </ul>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Projekt 1</h3>
+          <p>
+            Krótki opis projektu. Napisz, co robi projekt, jaki problem rozwiązuje
+            i jakich technologii użyłeś.
+          </p>
+          <a href="https://github.com/twojlogin/projekt-1" target="_blank">Repozytorium GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Projekt 2</h3>
+          <p>
+            Krótki opis projektu. Najlepiej 2 zdania: cel projektu + najważniejsze narzędzia.
+          </p>
+          <a href="https://github.com/twojlogin/projekt-2" target="_blank">Repozytorium GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Projekt 3</h3>
+          <p>
+            Miejsce na kolejny projekt. Lepiej pokazać mniej projektów, ale lepszych.
+          </p>
+          <a href="https://github.com/twojlogin/projekt-3" target="_blank">Repozytorium GitHub</a>
+        </article>
+      </div>
     </section>
 
-    <section>
+    <section class="card" id="contact">
       <h2>Kontakt</h2>
-      <p><a href="mailto:twojmail@example.com">twojmail@example.com</a></p>
-      <p><a href="https://github.com/twojlogin">GitHub</a></p>
-      <p><a href="https://www.linkedin.com/in/twojprofil">LinkedIn</a></p>
+      <p>Mail: <a href="mailto:twojmail@example.com">twojmail@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/twojprofil" target="_blank">twój profil LinkedIn</a></p>
+      <p>GitHub: <a href="https://github.com/twojlogin" target="_blank">twój profil GitHub</a></p>
     </section>
   </main>
 </body>
